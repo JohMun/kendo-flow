@@ -1,0 +1,68 @@
+{
+  "name": "kendo-flow",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@progress/kendo-datasource-vue-wrapper": "^2019.1.124",
+    "@progress/kendo-diagram-vue-wrapper": "^2019.1.124",
+    "@progress/kendo-theme-default": "^3.2.0",
+    "@progress/kendo-ui": "^2019.1.206",
+    "axios": "^0.18.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "es6-promise": "^4.2.5",
+    "vue": "^2.6.4",
+    "vue-router": "^3.0.2",
+    "vuex": "^3.1.0"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-spread": "^7.2.2",
+    "@vue/cli-plugin-babel": "^3.4.0",
+    "@vue/cli-plugin-eslint": "^3.4.0",
+    "@vue/cli-service": "^3.4.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.13.0",
+    "eslint-plugin-vue": "^5.1.0",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
+    "vue-template-compiler": "^2.6.4",
+    "vue-test-utils": "^1.0.0-beta.11"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "babel": {
+    "plugins": [
+      "@babel/plugin-syntax-jsx",
+      "@babel/plugin-syntax-dynamic-import",
+      "@babel/plugin-transform-spread",
+      "@babel/plugin-proposal-object-rest-spread"
+    ]
+  }
+}
