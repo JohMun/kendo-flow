@@ -11,18 +11,18 @@
         </h2>
         <hr>
         <div class="pages" id="myFlow">
-          <kendo-hierarchicaldatasource 
-            ref="remoteDataSourceComponent" 
-            :data="diagramData" 
+          <kendo-hierarchicaldatasource
+            ref="remoteDataSourceComponent"
+            :data="diagramData"
             schema-model-children="items">
           </kendo-hierarchicaldatasource>
 
-          <kendo-diagram 
-            data-source-ref="remoteDataSourceComponent" 
-            layout-type="layered" 
+          <kendo-diagram
+            data-source-ref="remoteDataSourceComponent"
+            layout-type="layered"
             :shape-defaults-visual="visualTemplate"
-            connection-defaults-stroke-color="#979797" 
-            :connection-defaults-stroke-width="2" 
+            connection-defaults-stroke-color="#979797"
+            :connection-defaults-stroke-width="2"
             @kendowidgetready="kendowidgetready">
           </kendo-diagram>
         </div>
@@ -34,7 +34,7 @@
     </div>
   </div>
 </template>
-  
+
 <script>
 // import { mapActions } from 'vuex'
 import Vue from 'vue';
@@ -64,7 +64,7 @@ export default {
       widget.bringIntoView(widget.shapes);
     },
     visualTemplate(options) {
-      var dataviz = kendo.dataviz;
+      var dataviz = window.kendo.dataviz;
       var g = new dataviz.diagram.Group();
       var dataItem = options.dataItem;
 
@@ -121,4 +121,3 @@ export default {
 
 <style lang="scss" scoped>
 </style>
-  
